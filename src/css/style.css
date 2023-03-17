@@ -21,15 +21,16 @@ main {
     align-items: center;
     background: hsl(0, 0%, 100%);
     border-radius: 10px;
-    width: 550px;
-    height: 350px;
+    width: 600px;
+    height: 450px;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 
 }
 
 picture { 
     height: 100%;
-    width: 100%;
+    width: 115%;
+    margin-right: 25px;
 }
 
 img {
@@ -45,7 +46,7 @@ img {
     align-items: start;
     height: 100%;
     padding: 10px;
-    margin-left: 25px;
+    gap: 20px;
 
 }
 
@@ -104,6 +105,7 @@ img {
     color: hsl(228, 12%, 48%);
 }
 
+
 button {
     align-self: center;
     background: #3F8166;
@@ -124,6 +126,10 @@ button:active {
 
 }
 
+
+
+
+
 @media only screen and (max-width:520px){
 
     main{
@@ -136,20 +142,34 @@ button:active {
     .full-card {
         flex-direction: column;
         width: 90%;
-        margin: 10px;
-        padding-bottom: 10px;
         height: auto;
+        margin: 10px;
+        padding: 0 0 10px 0;
+    
     }
 
     picture {
         height: auto;
-        width: auto;
+        width: 100%;
+        margin: 0;
     }
 
     img {
         height: 100%;
         border-radius: 10px 10px 0 0;
+        
     }
+
+    .content {
+        gap: 0;
+    }
+
+    .content h2, h1, p {
+        padding: 0 0 0 20px;
+
+    }
+
+ 
 
     .title {
         width: 80%;
